@@ -110,6 +110,10 @@ button, input {
   line-height: 2.8rem;
 }
 
+.header__nav a:hover {
+  border-bottom: 2px solid white;
+}
+
 .header__nav a:not(:last-child) {
   margin-right: 2.5rem;
 }
@@ -174,9 +178,11 @@ button, input {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.3rem;
+  margin-bottom: 4px;
 }
 
 .header__date {
+  text-align: center;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.4rem;
