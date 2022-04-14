@@ -1,0 +1,120 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 2.4rem 1.5rem 2.4rem;
+  -webkit-box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
+          box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
+  margin-bottom: 8rem;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 117.1875%;
+  margin-right: 7rem;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 9.2rem;
+}
+
+.header__nav a {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 116.66667%;
+}
+
+.header__nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.header__search {
+  border-radius: 8px;
+  background: url("../img/search.svg");
+  background-position: top 50% right 1.5rem;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  margin-right: 4rem;
+}
+
+.header__search > input {
+  width: 33rem;
+  height: 4.1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  padding-right: 5.2rem;
+}
+
+.header__search > input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+
+.header__search > input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+
+.header__search > input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+
+.header__search > input::placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+
+.header__time {
+  margin-right: 8.6rem;
+}
+
+.time__time {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  margin-bottom: .4rem;
+}
+
+.time__date {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 116.66667%;
+  text-align: center;
+}
+
+.header__avatar {
+  width: 6rem;
+  height: 6rem;
+}
+
+.header__avatar > img {
+  border-radius: 50%;
+}

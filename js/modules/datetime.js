@@ -1,6 +1,6 @@
 export const datetime = () => {
-  const divTime = document.querySelector(".header__time");
-  const divDate = document.querySelector(".header__date");
+  const divTime = document.querySelector(".time__time");
+  const divDate = document.querySelector(".time__date");
   const months = [
     "January",
     "February",
@@ -18,9 +18,12 @@ export const datetime = () => {
 
   function getClock() {
     let date = new Date();
-    divTime.innerHTML = date.getHours() + ":" + date.getMinutes();
+    divTime.innerHTML =
+      date.getHours() +
+      ":" +
+      (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
     divDate.innerHTML = months[date.getMonth()] + " " + date.getDate();
   }
 
-  setInterval(getClock, 500);
+  setInterval(getClock, 5000);
 };

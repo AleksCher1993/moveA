@@ -1,7 +1,43 @@
 @import "default";
-   
-@import "header";
+.active__link{
+    border-bottom: 3px solid white;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.8rem,1fr));
+    grid-template-areas: 
+    "head head head"
+    "aside main main"
+    "aside main main";
+    position: relative;
+    width: 144rem;
+margin: 0 auto;
 
+}
+.grid__header {
+    grid-area: head;
+}
+.header {
+}
+.grid__aside {
+    grid-area: aside;
+}
+.aside {
+}
+.grid__main {
+    grid-area: main;
+    margin-right: 2.4rem
+}
+.main {
+}
+
+@import "header";
+@import "sectionTrailer";
+@import "sectionTitle";
+@import "sectionTrending";
+@import "sectionNetflix";
+@import "sectionAside";
+@import "modal";
 
 
 @media (max-width:108em) {
